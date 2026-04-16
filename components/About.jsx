@@ -21,12 +21,10 @@ export default function About() {
           </div>
           <div className="mt-6 pt-6 border-t border-ink-700">
             <a
-              href="https://medium.com/@ajay_k/beyond-boundaries-an-odyssey-b665a3d8ce47"
-              target="_blank"
-              rel="noreferrer"
+              href="/about"
               className="mono-label hover:text-ember-500 transition-colors"
             >
-              Read the full story on Medium ↗
+              Read the full story ↗
             </a>
           </div>
         </Reveal>
