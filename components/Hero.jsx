@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { profile } from '@/lib/data';
 
 export default function Hero() {
@@ -21,9 +22,10 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Central display */}
-      <div className="flex-1 flex items-center py-20">
-        <div>
+      {/* Central display - now a 2-column grid with portrait */}
+      <div className="flex-1 grid md:grid-cols-12 gap-8 md:gap-12 items-center py-12 md:py-20">
+        {/* Text column */}
+        <div className="md:col-span-8">
           <h1
             className="display text-[clamp(3rem,11vw,9.5rem)] font-normal reveal"
             style={{ animationDelay: '0.3s' }}
@@ -39,6 +41,37 @@ export default function Hero() {
             {profile.tagline}
           </p>
         </div>
+
+        {/* Portrait column */}
+        <div
+          className="md:col-span-4 reveal order-first md:order-last"
+          style={{ animationDelay: '0.45s' }}
+        >
+          {/* Portrait column */}
+        <div
+          className="md:col-span-4 reveal order-first md:order-last"
+          style={{ animationDelay: '0.45s' }}
+        >
+          <div className="relative group">
+            {/* Frame offset behind */}
+            <div className="absolute inset-0 translate-x-3 translate-y-3 border border-ember-500/40 group-hover:translate-x-4 group-hover:translate-y-4 transition-transform duration-500" />
+
+            {/* Image */}
+            <div className="relative aspect-[3/4] overflow-hidden border border-ink-700 bg-ink-900">
+              <Image
+                src="/ajay.jpeg"
+                alt="Portrait of Ajay Kannan"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover grayscale-[15%] group-hover:grayscale-0 transition-all duration-700"
+              />
+              {/* Warm tint overlay to match palette */}
+              <div className="absolute inset-0 bg-gradient-to-t from-ink-950/40 via-transparent to-transparent pointer-events-none" />
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
 
       {/* Bottom strip */}
