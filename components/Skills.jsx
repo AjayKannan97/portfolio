@@ -35,9 +35,10 @@ export default function Skills() {
       <div className="mt-24 pt-10 border-t border-ink-700">
         <div className="mono-label mb-3">Also comfortable with</div>
         <p className="text-xl md:text-2xl font-light text-paper-300 leading-relaxed">
-          <span className="serif-italic text-paper-100">Predictive modeling</span> · Big Data ·
+          <span className="serif-italic text-paper-100">Predictive Modeling</span> ·
+          ML &amp; DL Algorithms · <span className="serif-italic text-paper-100">Big Data</span> ·
           Decision Analytics · <span className="serif-italic text-paper-100">Exploratory Data Analysis</span> ·
-          Arduino · HTML/CSS · <span className="serif-italic text-paper-100">Problem solving</span>
+          Computer Vision
         </p>
       </div>
     </section>

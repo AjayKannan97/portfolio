@@ -11,6 +11,8 @@ const SECTIONS = [
   { id: 'contact', label: 'Contact' },
 ];
 
+const RESUME_HREF = '/resume';
+
 export default function Nav() {
   const [active, setActive] = useState('');
   const [scrolled, setScrolled] = useState(false);
@@ -51,7 +53,7 @@ export default function Nav() {
             Ajay Kannan
           </span>
         </a>
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-x-6 lg:gap-x-8">
           {SECTIONS.map((s) => (
             <li key={s.id}>
               <a
@@ -64,6 +66,14 @@ export default function Nav() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href={RESUME_HREF}
+              className="mono-label transition-colors hover:text-paper-100"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
         <a
           href="mailto:ajaykannan1606@gmail.com"

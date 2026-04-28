@@ -95,6 +95,9 @@ export default function Hero() {
           <a href={profile.links.medium} target="_blank" rel="noreferrer" className="mono-label hover:text-ember-500 transition-colors">
             Medium ↗
           </a>
+          <a href={profile.links.resume} className="mono-label hover:text-ember-500 transition-colors">
+            Resume →
+          </a>
         </div>
         <div className="hidden md:flex items-center gap-2 text-paper-300">
           <div className="w-12 h-px bg-paper-300/40" />

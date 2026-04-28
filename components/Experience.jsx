@@ -32,9 +32,9 @@ export default function Experience() {
                   {job.bullets.map((b, i) => (
                     <li
                       key={i}
-                      className="text-paper-100/90 text-[15px] leading-relaxed pl-6 relative"
+                      className="text-paper-100/90 text-base leading-[1.7] pl-6 relative"
                     >
-                      <span className="absolute left-0 top-[0.6rem] w-3 h-px bg-paper-400" />
+                      <span className="absolute left-0 top-[0.7rem] w-3 h-px bg-paper-400" />
                       {b}
                     </li>
                   ))}

@@ -32,6 +32,11 @@ export default function Publications() {
                     <div className="mt-2 text-sm text-paper-300 serif-italic">
                       {pub.venue}
                     </div>
+                    {pub.summary && (
+                      <p className="mt-3 text-base leading-[1.7] text-paper-300 max-w-2xl">
+                        {pub.summary}
+                      </p>
+                    )}
                   </div>
                   <div className="md:col-span-2 mono-label">{pub.type}</div>
                   <div className="md:col-span-1 text-right mono-label">

@@ -23,13 +23,13 @@ export default function Projects() {
 
               {/* Decorative abstract visual */}
               <div className="aspect-[4/3] relative overflow-hidden bg-ink-900 border border-ink-700 mb-6 group-hover:border-ember-500/50 transition-colors">
-                <ProjectVisual index={i} />
+                <ProjectVisual visual={p.visual} index={i} />
               </div>
 
               <h3 className="display text-2xl md:text-3xl text-paper-50 mb-3 group-hover:text-ember-500 transition-colors">
                 {p.title}
               </h3>
-              <p className="text-paper-300 text-[15px] leading-relaxed mb-4">
+              <p className="text-paper-300 text-base leading-[1.7] mb-4">
                 {p.summary}
               </p>
               <div className="flex flex-wrap gap-2">
@@ -50,8 +50,9 @@ export default function Projects() {
   );
 }
 
-function ProjectVisual({ index }) {
-  // Six distinct SVG "generative" visuals — one per project
+function ProjectVisual({ visual, index }) {
+  // Keyed SVG visuals — picked per-project via `visual`, with index fallback.
+  const byKey = { voice: 0, chatbot: 1, tcr: 2, xray: 3, stream: 4, cluster: 5 };
   const visuals = [
     // 0 — Voice / waveform
     <svg key="0" viewBox="0 0 400 300" className="w-full h-full">
@@ -178,5 +179,6 @@ function ProjectVisual({ index }) {
       </text>
     </svg>,
   ];
-  return visuals[index % visuals.length];
+  const idx = visual && byKey[visual] !== undefined ? byKey[visual] : index;
+  return visuals[idx % visuals.length];
 }

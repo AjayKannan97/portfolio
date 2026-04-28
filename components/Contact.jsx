@@ -68,10 +68,15 @@ export default function Contact() {
                 @ajay_k
               </div>
             </a>
-            <div className="border border-ink-700 p-6 block">
-              <div className="mono-label mb-2">Based in</div>
-              <div className="text-paper-50 serif-italic">{profile.location}</div>
-            </div>
+            <a
+              href={profile.links.resume}
+              className="group border border-ink-700 hover:border-ember-500 p-6 transition-all hover:bg-ink-900 block"
+            >
+              <div className="mono-label mb-2">Resume →</div>
+              <div className="text-paper-50 group-hover:text-ember-500 transition-colors serif-italic">
+                View PDF
+              </div>
+            </a>
           </div>
         </Reveal>
       </div>
