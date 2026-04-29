@@ -1,24 +1,10 @@
-import { profile } from '@/lib/data';
 import SectionHeader from './SectionHeader';
 import Reveal from './Reveal';
 
 export default function About() {
   return (
     <section id="about" className="py-32 px-6 md:px-10 max-w-6xl mx-auto">
-      <SectionHeader number="01 / About" title="The short version" kicker="/ Introduction" />
-
-      {/* Summary pull-quote */}
-      {profile.summary && (
-        <Reveal>
-          <div className="mb-20 pl-6 border-l-2 border-ember-500/60 max-w-4xl">
-            <div className="mono-label !text-ember-500 mb-4">Summary</div>
-            <p className="serif-italic text-2xl md:text-3xl font-light leading-[1.4] text-paper-50">
-              {profile.summary}
-            </p>
-          </div>
-        </Reveal>
-      )}
-
+      <SectionHeader number="02 / About" title="The short version" kicker="/ Introduction" />
       <div className="grid md:grid-cols-12 gap-10 items-start">
         <Reveal className="md:col-span-4">
           <div className="mono-label mb-4">Biography</div>

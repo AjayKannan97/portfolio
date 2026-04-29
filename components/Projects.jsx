@@ -4,9 +4,9 @@ import Reveal from './Reveal';
 
 export default function Projects() {
   return (
-    <section id="work" className="py-32 px-6 md:px-10 max-w-6xl mx-auto">
+    <section id="projects" className="py-32 px-6 md:px-10 max-w-6xl mx-auto">
       <SectionHeader
-        number="03 / Work"
+        number="05 / Projects"
         title="Everything on GitHub"
         kicker="/ Projects"
       />

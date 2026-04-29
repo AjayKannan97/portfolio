@@ -4,8 +4,8 @@ import Reveal from './Reveal';
 
 export default function Publications() {
   return (
-    <section id="writing" className="py-32 px-6 md:px-10 max-w-6xl mx-auto">
-      <SectionHeader number="05 / Writing" title="Papers & posters" kicker="/ Publications" />
+    <section id="papers" className="py-32 px-6 md:px-10 max-w-6xl mx-auto">
+      <SectionHeader number="03 / Papers" title="Papers & posters" kicker="/ Publications" />
 
       <div className="divide-y divide-ink-700 border-y border-ink-700">
         {publications.map((pub, i) => {

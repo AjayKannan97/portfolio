@@ -1,38 +1,11 @@
-import { experience, education } from '@/lib/data';
+import { experience } from '@/lib/data';
 import SectionHeader from './SectionHeader';
 import Reveal from './Reveal';
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-32 px-6 md:px-10 max-w-6xl mx-auto">
-      <SectionHeader number="02 / Experience" title="Where I've built" kicker="/ Work history" />
-
-      {/* Education block */}
-      <Reveal>
-        <div className="mb-20 pb-12 border-b border-ink-700">
-          <div className="mono-label !text-ember-500 mb-6">Education</div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {education.map((ed) => (
-              <div key={ed.school}>
-                <div className="font-mono text-xs text-paper-400 mb-2">{ed.period}</div>
-                <h3 className="display text-xl md:text-2xl text-paper-50 mb-1">
-                  {ed.school}
-                </h3>
-                <div className="serif-italic text-paper-300 text-base mb-3">
-                  {ed.degree}
-                </div>
-                {ed.coursework && (
-                  <div className="text-paper-300 text-sm leading-relaxed">
-                    <span className="mono-label mr-2">Coursework</span>
-                    {ed.coursework.join(' · ')}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </Reveal>
-
+    <section id="career" className="py-32 px-6 md:px-10 max-w-6xl mx-auto">
+      <SectionHeader number="04 / Career" title="Where I've built" kicker="/ Work history" />
       <div className="space-y-20">
         {experience.map((job, idx) => (
           <Reveal key={idx} delay={idx * 80}>

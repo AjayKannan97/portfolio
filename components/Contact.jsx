@@ -9,7 +9,7 @@ export default function Contact() {
     >
       <div className="grid md:grid-cols-12 gap-10 items-start">
         <Reveal className="md:col-span-5">
-          <div className="mono-label !text-ember-500 mb-4">06 / Contact</div>
+          <div className="mono-label !text-ember-500 mb-4">08 / Contact</div>
           <h2 className="display text-5xl md:text-7xl leading-[0.9] mb-8">
             Let's
             <br />

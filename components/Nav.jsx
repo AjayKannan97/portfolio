@@ -3,11 +3,13 @@
 import { useEffect, useState } from 'react';
 
 const SECTIONS = [
+  { id: 'summary', label: 'Summary' },
   { id: 'about', label: 'About' },
-  { id: 'experience', label: 'Experience' },
-  { id: 'work', label: 'Work' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'writing', label: 'Writing' },
+  { id: 'papers', label: 'Papers' },
+  { id: 'career', label: 'Career' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'tools', label: 'Tools' },
+  { id: 'education', label: 'Education' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -53,7 +55,7 @@ export default function Nav() {
             Ajay Kannan
           </span>
         </a>
-        <ul className="hidden md:flex items-center gap-x-6 lg:gap-x-8">
+        <ul className="hidden md:flex items-center gap-x-4 lg:gap-x-6">
           {SECTIONS.map((s) => (
             <li key={s.id}>
               <a

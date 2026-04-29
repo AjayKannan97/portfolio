@@ -4,8 +4,8 @@ import Reveal from './Reveal';
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-32 px-6 md:px-10 max-w-6xl mx-auto">
-      <SectionHeader number="04 / Stack" title="Tools of the trade" kicker="/ What I reach for" />
+    <section id="tools" className="py-32 px-6 md:px-10 max-w-6xl mx-auto">
+      <SectionHeader number="06 / Tools" title="Tools of the trade" kicker="/ What I reach for" />
 
       <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
         {skills.map((group, i) => (
