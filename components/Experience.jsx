@@ -11,9 +11,6 @@ export default function Experience() {
           <Reveal key={idx} delay={idx * 80}>
             <div className="grid md:grid-cols-12 gap-8 items-start group">
               <div className="md:col-span-3">
-                <div className="mono-label !text-ember-500 mb-2">
-                  {String(idx + 1).padStart(2, '0')}
-                </div>
                 <div className="font-mono text-sm text-paper-100">{job.period}</div>
                 <div className="font-mono text-xs text-paper-400 mt-1">{job.location}</div>
               </div>

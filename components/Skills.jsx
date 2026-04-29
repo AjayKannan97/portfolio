@@ -11,9 +11,6 @@ export default function Skills() {
         {skills.map((group, i) => (
           <Reveal key={group.category} delay={i * 80}>
             <div className="flex items-baseline gap-4 mb-5">
-              <span className="mono-label !text-ember-500">
-                {String(i + 1).padStart(2, '0')}
-              </span>
               <h3 className="display text-2xl text-paper-50">{group.category}</h3>
               <div className="flex-1 h-px bg-ink-700 mb-1" />
             </div>
