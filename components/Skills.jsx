@@ -1,4 +1,4 @@
-import { skills } from '@/lib/data';
+import { skills, currentlyLearning } from '@/lib/data';
 import SectionHeader from './SectionHeader';
 import Reveal from './Reveal';
 
@@ -31,14 +31,20 @@ export default function Skills() {
         ))}
       </div>
 
-      {/* marquee-style tag line for aesthetic */}
+      {/* Currently Learning */}
       <div className="mt-24 pt-10 border-t border-ink-700">
-        <div className="mono-label mb-3">Also comfortable with</div>
+        <div className="mono-label !text-ember-500 mb-3">Currently Learning</div>
         <p className="text-xl md:text-2xl font-light text-paper-300 leading-relaxed">
-          <span className="serif-italic text-paper-100">Predictive Modeling</span> ·
-          ML &amp; DL Algorithms · <span className="serif-italic text-paper-100">Big Data</span> ·
-          Decision Analytics · <span className="serif-italic text-paper-100">Exploratory Data Analysis</span> ·
-          Computer Vision
+          {currentlyLearning.map((item, i) => (
+            <span key={item}>
+              <span
+                className={i % 2 === 0 ? 'serif-italic text-paper-100' : ''}
+              >
+                {item}
+              </span>
+              {i < currentlyLearning.length - 1 && ' · '}
+            </span>
+          ))}
         </p>
       </div>
     </section>
