@@ -23,13 +23,13 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-  title: 'Ajay Kannan — Software Engineer',
+  title: 'Ajay Kannan — Senior Software Engineer',
   description:
-    'Ajay Kannan — Software Engineer at PG&E. Building production data platforms, ML pipelines, and generative AI systems.',
-  keywords: ['Ajay Kannan', 'Software Engineer', 'Machine Learning Engineer', 'Backend Engineer', 'Generative AI', 'Data Platform'],
+    'Ajay Kannan — Senior Software Engineer at PG&E. Building production data platforms, ML pipelines, and generative AI systems.',
+  keywords: ['Ajay Kannan', 'Senior Software Engineer', 'Software Engineer', 'Machine Learning Engineer', 'Backend Engineer', 'Generative AI', 'Data Platform'],
   authors: [{ name: 'Ajay Kannan' }],
   openGraph: {
-    title: 'Ajay Kannan — Software Engineer',
+    title: 'Ajay Kannan — Senior Software Engineer',
     description: 'Production data platforms, ML pipelines, generative AI.',
     type: 'website',
   },

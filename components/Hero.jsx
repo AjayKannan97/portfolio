@@ -13,7 +13,7 @@ export default function Hero() {
           <div className="mono-label mb-2">Currently</div>
           <div className="text-sm text-paper-100">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-ember-500 mr-2 align-middle animate-pulse" />
-            Software Engineer @ PG&amp;E
+            Senior Software Engineer @ PG&amp;E
           </div>
         </div>
         <div className="text-right">
